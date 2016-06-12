@@ -1,0 +1,561 @@
+﻿
+rootd@DESKTOP-3AVBJCV MINGW64 ~/Desktop/git/HKUST/full-stack-web-specialization-                               AJS/conFusion (master)
+$ npm install -g grunt-cli
+C:\Users\rootd\AppData\Roaming\npm\grunt -> C:\Users\rootd\AppData\Roaming\npm\node_modules\grunt-cli\bin\grunt
+C:\Users\rootd\AppData\Roaming\npm
+`-- grunt-cli@1.2.0
+
+
+rootd@DESKTOP-3AVBJCV MINGW64 ~/Desktop/git/HKUST/full-stack-web-specialization-AJS/conFusion (master)
+$ npm install grunt --save-dev
+
+rootd@DESKTOP-3AVBJCV MINGW64 ~/Desktop/git/HKUST/full-stack-web-specialization-AJS/conFusion (master)
+$ npm install grunt-contrib-jshint --save-dev
+
+rootd@DESKTOP-3AVBJCV MINGW64 ~/Desktop/git/HKUST/full-stack-web-specialization-AJS/conFusion (master)
+$ npm install jshint-stylish --save-dev
+conFusion@ C:\Users\rootd\Desktop\git\HKUST\full-stack-web-specialization-AJS\conFusion
+`-- jshint-stylish@2.2.0
+  +-- beeper@1.1.0
+  +-- log-symbols@1.0.2
+  +-- plur@2.1.2
+  | `-- irregular-plurals@1.2.0
+  `-- string-length@1.0.1
+
+
+rootd@DESKTOP-3AVBJCV MINGW64 ~/Desktop/git/HKUST/full-stack-web-specialization-AJS/conFusion (master)
+$ npm install time-grunt --save-dev
+
+rootd@DESKTOP-3AVBJCV MINGW64 ~/Desktop/git/HKUST/full-stack-web-specialization-AJS/conFusion (master)
+$ npm install jit-grunt --save-dev
+
+rootd@DESKTOP-3AVBJCV MINGW64 ~/Desktop/git/HKUST/full-stack-web-specialization-AJS/conFusion (master)
+$ grunt
+Warning: Task "default" not found. Use --force to continue.
+
+Aborted due to warnings.
+
+rootd@DESKTOP-3AVBJCV MINGW64 ~/Desktop/git/HKUST/full-stack-web-specialization-AJS/conFusion (master)
+$ grunt
+Running "jshint:all" (jshint) task
+
+√ No problems
+
+
+Done.
+
+
+Execution Time (2016-06-12 04:06:38 UTC)
+loading tasks                  30ms  █████ 13%
+loading grunt-contrib-jshint  140ms  ████████████████████ 61%
+jshint:all                     61ms  █████████ 26%
+Total 231ms
+
+
+rootd@DESKTOP-3AVBJCV MINGW64 ~/Desktop/git/HKUST/full-stack-web-specialization-AJS/conFusion (master)
+$ npm install grunt-contrib-copy --save-dev
+conFusion@ C:\Users\rootd\Desktop\git\HKUST\full-stack-web-specialization-AJS\conFusion
+`-- grunt-contrib-copy@1.0.0
+  `-- file-sync-cmp@0.1.1
+
+
+rootd@DESKTOP-3AVBJCV MINGW64 ~/Desktop/git/HKUST/full-stack-web-specialization-AJS/conFusion (master)
+$ npm install grunt-contrib-clean --save-dev
+conFusion@ C:\Users\rootd\Desktop\git\HKUST\full-stack-web-specialization-AJS\conFusion
+`-- grunt-contrib-clean@1.0.0
+  `-- rimraf@2.5.2
+
+
+rootd@DESKTOP-3AVBJCV MINGW64 ~/Desktop/git/HKUST/full-stack-web-specialization-AJS/conFusion (master)
+$ grunt
+Running "jshint:all" (jshint) task
+
+√ No problems
+
+
+Done.
+
+
+Execution Time (2016-06-12 04:15:55 UTC)
+loading tasks                  26ms  ████ 12%
+loading grunt-contrib-jshint  131ms  ████████████████████ 60%
+jshint:all                     63ms  ██████████ 29%
+Total 220ms
+
+
+rootd@DESKTOP-3AVBJCV MINGW64 ~/Desktop/git/HKUST/full-stack-web-specialization-AJS/conFusion (master)
+$ grunt
+Running "clean:build" (clean) task
+>> 0 paths cleaned.
+
+Running "jshint:all" (jshint) task
+
+√ No problems
+
+
+Running "copy:dist" (copy) task
+Created 4 directories, copied 9 files
+
+Running "copy:fonts" (copy) task
+Copied 11 files
+
+Done.
+
+
+Execution Time (2016-06-12 04:16:57 UTC)
+loading tasks                  25ms  ███ 6%
+loading grunt-contrib-clean     6ms  █ 2%
+clean:build                    10ms  █ 3%
+loading grunt-contrib-jshint  122ms  ██████████ 31%
+jshint:all                     55ms  █████ 14%
+loading grunt-contrib-copy      4ms  █ 1%
+copy:dist                     100ms  █████████ 25%
+copy:fonts                     73ms  ██████ 18%
+Total 395ms
+
+
+rootd@DESKTOP-3AVBJCV MINGW64 ~/Desktop/git/HKUST/full-stack-web-specialization-AJS/conFusion (master)
+$ npm install grunt-contrib-concat --save-dev
+conFusion@ C:\Users\rootd\Desktop\git\HKUST\full-stack-web-specialization-AJS\conFusion
+`-- grunt-contrib-concat@1.0.1
+  `-- source-map@0.5.6
+
+
+rootd@DESKTOP-3AVBJCV MINGW64 ~/Desktop/git/HKUST/full-stack-web-specialization-AJS/conFusion (master)
+$ npm install grunt-contrib-cssmin --save-dev
+conFusion@ C:\Users\rootd\Desktop\git\HKUST\full-stack-web-specialization-AJS\conFusion
+`-- grunt-contrib-cssmin@1.0.1
+  +-- clean-css@3.4.17
+  | +-- commander@2.8.1
+  | | `-- graceful-readlink@1.0.1
+  | `-- source-map@0.4.4
+  |   `-- amdefine@1.0.0
+  `-- maxmin@1.1.0
+    +-- gzip-size@1.0.0
+    | +-- browserify-zlib@0.1.4
+    | | `-- pako@0.2.8
+    | `-- concat-stream@1.5.1
+    |   +-- readable-stream@2.0.6
+    |   | +-- isarray@1.0.0
+    |   | +-- process-nextick-args@1.0.7
+    |   | `-- util-deprecate@1.0.2
+    |   `-- typedarray@0.0.6
+    `-- pretty-bytes@1.0.4
+
+
+rootd@DESKTOP-3AVBJCV MINGW64 ~/Desktop/git/HKUST/full-stack-web-specialization-AJS/conFusion (master)
+$ npm install grunt-contrib-uglify --save-dev
+conFusion@ C:\Users\rootd\Desktop\git\HKUST\full-stack-web-specialization-AJS\conFusion
+`-- grunt-contrib-uglify@1.0.1
+  +-- lodash@4.13.1
+  +-- uglify-js@2.6.2
+  | +-- async@0.2.10
+  | +-- uglify-to-browserify@1.0.2
+  | `-- yargs@3.10.0
+  |   +-- camelcase@1.2.1
+  |   +-- cliui@2.1.0
+  |   | +-- center-align@0.1.3
+  |   | | +-- align-text@0.1.4
+  |   | | | +-- kind-of@3.0.3
+  |   | | | | `-- is-buffer@1.1.3
+  |   | | | +-- longest@1.0.1
+  |   | | | `-- repeat-string@1.5.4
+  |   | | `-- lazy-cache@1.0.4
+  |   | +-- right-align@0.1.3
+  |   | `-- wordwrap@0.0.2
+  |   `-- window-size@0.1.0
+  `-- uri-path@1.0.0
+
+
+rootd@DESKTOP-3AVBJCV MINGW64 ~/Desktop/git/HKUST/full-stack-web-specialization-AJS/conFusion (master)
+$ npm install grunt-filerev --save-dev
+conFusion@ C:\Users\rootd\Desktop\git\HKUST\full-stack-web-specialization-AJS\conFusion
+`-- grunt-filerev@2.3.1
+  +-- convert-source-map@1.2.0
+  `-- each-async@0.1.3
+
+
+rootd@DESKTOP-3AVBJCV MINGW64 ~/Desktop/git/HKUST/full-stack-web-specialization-AJS/conFusion (master)
+$ npm install grunt-usemin --save-dev
+conFusion@ C:\Users\rootd\Desktop\git\HKUST\full-stack-web-specialization-AJS\conFusion
+`-- grunt-usemin@3.1.1
+  +-- debug@2.2.0
+  | `-- ms@0.7.1
+  `-- path-exists@1.0.0
+
+
+rootd@DESKTOP-3AVBJCV MINGW64 ~/Desktop/git/HKUST/full-stack-web-specialization-AJS/conFusion (master)
+$ grunt
+Running "clean:build" (clean) task
+>> 1 path cleaned.
+
+Running "jshint:all" (jshint) task
+
+√ No problems
+
+
+Running "useminPrepare:html" (useminPrepare) task
+Configuration changed for concat, uglify, cssmin
+
+Running "concat:dist" (concat) task
+
+Running "concat:generated" (concat) task
+
+Running "cssmin:dist" (cssmin) task
+>> No files created.
+
+Running "cssmin:generated" (cssmin) task
+>> 1 file created. 191.69 kB → 184.98 kB
+
+Running "uglify:dist" (uglify) task
+>> No files created.
+
+Running "uglify:generated" (uglify) task
+File dist\scripts\main.js created: 0 B → 0 B
+>> 1 file created.
+
+Running "copy:dist" (copy) task
+Created 4 directories, copied 9 files
+
+Running "copy:fonts" (copy) task
+Copied 11 files
+
+Running "filerev:release" (filerev) task
+Revved 2 files
+
+Running "usemin:html" (usemin) task
+Replaced 2 references to assets
+
+Running "usemin:css" (usemin) task
+Replaced 1 reference to assets
+
+Done.
+
+
+Execution Time (2016-06-12 04:34:00 UTC)
+loading tasks                  54ms  ██ 4%
+clean:build                    24ms  █ 2%
+loading grunt-contrib-jshint  161ms  ████ 12%
+jshint:all                     65ms  ██ 5%
+loading grunt-usemin           14ms  █ 1%
+useminPrepare:html             24ms  █ 2%
+loading grunt-contrib-concat   38ms  █ 3%
+concat:generated               35ms  █ 3%
+loading grunt-contrib-cssmin  178ms  █████ 13%
+cssmin:generated              530ms  █████████████ 40%
+loading grunt-contrib-uglify   93ms  ███ 7%
+copy:dist                      34ms  █ 3%
+copy:fonts                     23ms  █ 2%
+Total 1.3s
+
+
+rootd@DESKTOP-3AVBJCV MINGW64 ~/Desktop/git/HKUST/full-stack-web-specialization-AJS/conFusion (master)
+$ npm install grunt-contrib-watch --save-dev
+conFusion@ C:\Users\rootd\Desktop\git\HKUST\full-stack-web-specialization-AJS\conFusion
+`-- grunt-contrib-watch@1.0.0
+  +-- gaze@1.0.0
+  | `-- globule@0.2.0
+  |   +-- glob@3.2.11
+  |   | `-- minimatch@0.3.0
+  |   +-- lodash@2.4.2
+  |   `-- minimatch@0.2.14
+  `-- tiny-lr@0.2.1
+    +-- body-parser@1.14.2
+    | +-- bytes@2.2.0
+    | +-- content-type@1.0.2
+    | +-- depd@1.1.0
+    | +-- http-errors@1.3.1
+    | | `-- statuses@1.3.0
+    | +-- on-finished@2.3.0
+    | | `-- ee-first@1.1.1
+    | +-- qs@5.2.0
+    | +-- raw-body@2.1.6
+    | | +-- bytes@2.3.0
+    | | `-- unpipe@1.0.0
+    | `-- type-is@1.6.13
+    |   +-- media-typer@0.3.0
+    |   `-- mime-types@2.1.11
+    |     `-- mime-db@1.23.0
+    +-- faye-websocket@0.10.0
+    | `-- websocket-driver@0.6.5
+    |   `-- websocket-extensions@0.1.1
+    +-- livereload-js@2.2.2
+    +-- parseurl@1.3.1
+    `-- qs@5.1.0
+
+
+rootd@DESKTOP-3AVBJCV MINGW64 ~/Desktop/git/HKUST/full-stack-web-specialization-AJS/conFusion (master)
+$ grunt serve
+Running "clean:build" (clean) task
+>> 1 path cleaned.
+
+Running "jshint:all" (jshint) task
+
+√ No problems
+
+
+Running "useminPrepare:html" (useminPrepare) task
+Configuration changed for concat, uglify, cssmin
+
+Running "concat:dist" (concat) task
+
+Running "concat:generated" (concat) task
+
+Running "cssmin:dist" (cssmin) task
+>> No files created.
+
+Running "cssmin:generated" (cssmin) task
+>> 1 file created. 191.69 kB → 184.98 kB
+
+Running "uglify:dist" (uglify) task
+>> No files created.
+
+Running "uglify:generated" (uglify) task
+File dist\scripts\main.js created: 0 B → 0 B
+>> 1 file created.
+
+Running "copy:dist" (copy) task
+Created 4 directories, copied 9 files
+
+Running "copy:fonts" (copy) task
+Copied 11 files
+
+Running "filerev:release" (filerev) task
+Revved 2 files
+
+Running "usemin:html" (usemin) task
+Replaced 2 references to assets
+
+Running "usemin:css" (usemin) task
+Replaced 1 reference to assets
+
+jit-grunt: Plugin for the "connect" task not found.
+If you have installed the plugin already, please setting the static mapping.
+See https://github.com/shootaroo/jit-grunt#static-mappings
+
+Warning: Task "connect:dist" failed. Use --force to continue.
+
+Aborted due to warnings.
+
+
+Execution Time (2016-06-12 04:55:31 UTC)
+loading tasks                  28ms  █ 2%
+clean:build                    21ms  █ 2%
+loading grunt-contrib-jshint  128ms  ████ 11%
+jshint:all                     67ms  ██ 6%
+loading grunt-usemin           12ms  █ 1%
+useminPrepare:html             24ms  █ 2%
+loading grunt-contrib-concat   13ms  █ 1%
+loading grunt-contrib-cssmin  105ms  ███ 9%
+cssmin:generated              559ms  ████████████████ 49%
+loading grunt-contrib-uglify   76ms  ███ 7%
+copy:dist                      27ms  █ 2%
+copy:fonts                     24ms  █ 2%
+Total 1.1s
+
+
+rootd@DESKTOP-3AVBJCV MINGW64 ~/Desktop/git/HKUST/full-stack-web-specialization-AJS/conFusion (master)
+$ npm install grunt-contrib-watch --save-dev
+
+rootd@DESKTOP-3AVBJCV MINGW64 ~/Desktop/git/HKUST/full-stack-web-specialization-AJS/conFusion (master)
+$ npm install grunt-contrib-connect --save-dev
+conFusion@ C:\Users\rootd\Desktop\git\HKUST\full-stack-web-specialization-AJS\conFusion
+`-- grunt-contrib-connect@1.0.2
+  +-- connect@3.4.1
+  | +-- finalhandler@0.4.1
+  | `-- utils-merge@1.0.0
+  +-- connect-livereload@0.5.4
+  +-- http2@3.3.4
+  +-- morgan@1.7.0
+  | +-- basic-auth@1.0.4
+  | `-- on-headers@1.0.1
+  +-- opn@4.0.2
+  +-- portscanner@1.0.0
+  | `-- async@0.1.15
+  +-- serve-index@1.7.3
+  | +-- accepts@1.2.13
+  | | `-- negotiator@0.5.3
+  | +-- batch@0.5.3
+  | `-- escape-html@1.0.3
+  `-- serve-static@1.11.1
+    +-- encodeurl@1.0.1
+    `-- send@0.14.1
+      +-- destroy@1.0.4
+      +-- etag@1.7.0
+      +-- fresh@0.3.0
+      +-- http-errors@1.5.0
+      | `-- setprototypeof@1.0.1
+      +-- mime@1.3.4
+      `-- range-parser@1.2.0
+
+
+rootd@DESKTOP-3AVBJCV MINGW64 ~/Desktop/git/HKUST/full-stack-web-specialization-AJS/conFusion (master)
+$ grunt serve
+Running "clean:build" (clean) task
+>> 1 path cleaned.
+
+Running "jshint:all" (jshint) task
+
+√ No problems
+
+
+Running "useminPrepare:html" (useminPrepare) task
+Configuration changed for concat, uglify, cssmin
+
+Running "concat:dist" (concat) task
+
+Running "concat:generated" (concat) task
+
+Running "cssmin:dist" (cssmin) task
+>> No files created.
+
+Running "cssmin:generated" (cssmin) task
+>> 1 file created. 191.69 kB → 184.98 kB
+
+Running "uglify:dist" (uglify) task
+>> No files created.
+
+Running "uglify:generated" (uglify) task
+File dist\scripts\main.js created: 0 B → 0 B
+>> 1 file created.
+
+Running "copy:dist" (copy) task
+Created 4 directories, copied 9 files
+
+Running "copy:fonts" (copy) task
+Copied 11 files
+
+Running "filerev:release" (filerev) task
+Revved 2 files
+
+Running "usemin:html" (usemin) task
+Replaced 2 references to assets
+
+Running "usemin:css" (usemin) task
+Replaced 1 reference to assets
+
+Running "connect:dist" (connect) task
+Started connect web server on http://localhost:9000
+
+Running "watch" task
+Waiting...
+>> File "app\menu.html" changed.
+Running "clean:build" (clean) task
+>> 1 path cleaned.
+
+Running "jshint:all" (jshint) task
+
+√ No problems
+
+
+Running "useminPrepare:html" (useminPrepare) task
+Configuration changed for concat, uglify, cssmin
+
+Running "concat:dist" (concat) task
+
+Running "concat:generated" (concat) task
+
+Running "cssmin:dist" (cssmin) task
+>> No files created.
+
+Running "cssmin:generated" (cssmin) task
+>> 1 file created. 191.69 kB → 184.98 kB
+
+Running "uglify:dist" (uglify) task
+>> No files created.
+
+Running "uglify:generated" (uglify) task
+File dist\scripts\main.js created: 0 B → 0 B
+>> 1 file created.
+
+Running "copy:dist" (copy) task
+Created 4 directories, copied 9 files
+
+Running "copy:fonts" (copy) task
+Copied 11 files
+
+Running "filerev:release" (filerev) task
+Revved 2 files
+
+Running "usemin:html" (usemin) task
+Replaced 2 references to assets
+
+Running "usemin:css" (usemin) task
+Replaced 1 reference to assets
+
+Done.
+
+
+Execution Time (2016-06-12 05:00:03 UTC)
+loading tasks                 105ms  ██ 4%
+clean:build                    26ms  █ 1%
+loading grunt-contrib-jshint  522ms  ███████ 21%
+jshint:all                     78ms  ██ 3%
+loading grunt-usemin           45ms  █ 2%
+useminPrepare:html             36ms  █ 1%
+loading grunt-contrib-concat   52ms  █ 2%
+concat:generated               36ms  █ 1%
+loading grunt-contrib-cssmin  474ms  ███████ 19%
+cssmin:generated              565ms  ████████ 23%
+loading grunt-contrib-uglify  245ms  ████ 10%
+copy:dist                      83ms  ██ 3%
+copy:fonts                    113ms  ██ 5%
+loading grunt-filerev          32ms  █ 1%
+Total 2.5s
+
+Completed in 3.308s at Sun Jun 12 2016 00:00:06 GMT-0500 (Central Daylight Time) - Waiting...
+grunt serve
+
+
+
+rootd@DESKTOP-3AVBJCV MINGW64 ~/Desktop/git/HKUST/full-stack-web-specialization-AJS/conFusion (master)
+$ grunt serve
+Running "clean:build" (clean) task
+>> 1 path cleaned.
+
+Running "jshint:all" (jshint) task
+
+√ No problems
+
+
+Running "useminPrepare:html" (useminPrepare) task
+Configuration changed for concat, uglify, cssmin
+
+Running "concat:dist" (concat) task
+
+Running "concat:generated" (concat) task
+
+Running "cssmin:dist" (cssmin) task
+>> No files created.
+
+Running "cssmin:generated" (cssmin) task
+>> 1 file created. 191.69 kB → 184.98 kB
+
+Running "uglify:dist" (uglify) task
+>> No files created.
+
+Running "uglify:generated" (uglify) task
+File dist\scripts\main.js created: 0 B → 0 B
+>> 1 file created.
+
+Running "copy:dist" (copy) task
+Created 4 directories, copied 9 files
+
+Running "copy:fonts" (copy) task
+Copied 11 files
+
+Running "filerev:release" (filerev) task
+Revved 2 files
+
+Running "usemin:html" (usemin) task
+Replaced 2 references to assets
+
+Running "usemin:css" (usemin) task
+Replaced 1 reference to assets
+
+Running "connect:dist" (connect) task
+Started connect web server on http://localhost:9000
+
+Running "watch" task
+Waiting...
+
