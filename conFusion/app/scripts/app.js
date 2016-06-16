@@ -68,9 +68,9 @@ angular.module('confusionApp', [])
             };
         }])
         
-                .controller('ContactController', ['$scope', function($scope) {
+        .controller('ContactController', ['$scope', function($scope) {
 
-            $scope.feedback = {mychannel:"", firstName:"", lastName:"",
+        $scope.feedback = {mychannel:"", firstName:"", lastName:"",
                                agree:false, email:"" };
         }])
 
